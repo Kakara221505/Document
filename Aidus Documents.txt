@@ -1,0 +1,381 @@
+######################### mokhub Technologies Info #####################
+################### Gmail Login basecamp #####################################
+Username: vivek.tripathi@monkhub.com
+Password: Tiwari@016881
+
+######### Aidus Credentials ############
+Username=>info@aidus.com
+Pass=>aidus@dmin22
+
+
+############## BitucketUsername #########################
+Username: Vivek221505
+Password: Tiwari@016881
+npm i socket.io-client
+npm install file-saver --save
+npm install --save sockjs-client    
+
+############## Jenkins #########################
+username - vivektripathi
+password - vivek@MH22
+
+https://jenkins.monkhub.com/
+
+career@
+kanak.12jul@gmail.com
+123456
+
+gmodif
+https://admin-gamodify.immodesta.com/auth/login
+username-testAdmin@gamodify.com
+pass-admin@123
+
+webxotic
+{ 
+"email": "admin@webxotic.com",
+  "password": "@dmWeb@Empires$24"
+}
+
+
+nation morning grab bubble kick wealth few brown trigger govern rural trash
+
+
+npm install -D tailwindcss postcss autoprefixer
+git clone -b main https://Vivek221505@bitbucket.org/monkhub/aidusfrontend.git
+
+
+
+
+ readFileCsv(event: any): void {
+    let file = event.target.files[0];
+    let filesReader = new FileReader();
+    filesReader.readAsBinaryString(file);
+    
+    filesReader.onload = (e) => {
+      var workBoox = XLSX.read(filesReader.result, { type: 'binary' });
+      var sheetname = workBoox.SheetNames;
+      this.excelFileData = XLSX.utils.sheet_to_json(workBoox.Sheets[sheetname[0]], { header: ["sideA", "sideB"] });
+      
+      console.log(this.excelFileData);
+      
+      // Validate character limits for Side A and Side B
+      for (let i = 0; i < this.excelFileData.length; i++) {
+        let sideAContent = this.excelFileData[i]['sideA'];
+        let sideBContent = this.excelFileData[i]['sideB'];
+        
+        if (sideAContent.length > 50) {
+          this.toastr.error("Side A text should be maximum 50 characters.");
+          return; // Exit the loop if validation fails
+        }
+        
+        if (sideBContent.length > 80) {
+          this.toastr.error("Side B text should be maximum 80 characters.");
+          return; // Exit the loop if validation fails
+        }
+        
+        // Push the data to newArray if validation passes
+        this.newArray.push({ sideA: sideAContent, sideB: sideBContent });
+      }
+      
+      // Check minimum sides condition
+      if (this.newArray.length < 10) {
+        this.toastr.error("Minimum sides should be 10.");
+        return;
+      }
+      
+      // Check maximum sides condition
+      if (this.newArray.length > 300) {
+        this.toastr.error("Maximum sides should be 300.");
+        return;
+      }
+      
+      console.log(this.newArray);
+    };
+  
+    event.target.value = ''; // Clear file input value after processing
+  }
+
+
+
+########## Vitrya Project ##############
+https://gitlab.com/vitrayatech-frontend/admin-ui-new
+Username: nikhil.singh@monkhub.com
+Password: Attack@123
+
+CKEditorModule
+ckeConfig: CKEDITOR.config;
+
+########## EDUGAMO ###############
+username - vivek
+password- ViV3k#4   ViV3k#4
+http://3.108.135.86:8080/job/edugame-admin-dev/
+https://admin-gamodify.immodesta.com/auth/login
+login cred.
+username - rahulkirti20@gmail.com
+password- rahul@123
+admin@edugamo.com
+admin@123
+testAdmin@gamodify.com
+
+
+https://drive.google.com/drive/folders/1RMp1bWVbm2UgTh1wqJyJyzLH_XYRl-Wg
+https://www.figma.com/file/hawVoiMaNbfPTCjaNeAwrd/MH-Website?node-id=328%3A2358&mode=dev
+
+
+###### SBL #################
+427040415900 both data
+516880464100 both data
+Single dept user data - 
+144235951678
+244235951678
+
+
+########## MH Website #############
+https://www.monkhub.com/us/get-free-quote?utm_term=testTerm&utm_source=testSource
+
+Department 1 Admin:
+URL - staging-sbl-dpt.immodesta.com
+Login ID - sbldepartment@gmail.com
+Password - MyDepartment@sbl
+
+Department 2 Admin:
+URL - https://staging-sbl-dpt2.immodesta.com
+Login ID - sbldepartment@gmail.com
+Password - MyDepartment@sbl
+
+Unified Registry System admin :
+URL - https://staging-sbl-admin.immodesta.com/auth/login
+Login ID - sbladmin@gmail.com
+Password - MyAdmin@#Sbl
+
+User Login :
+URL - https://staging-sbl-user.immodesta.com/
+Login ID - Aadhaar No of the User
+Password - 111111 (6 times 1)
+
+Raboe Admin Login Prod Credentails - 
+https://gamego-admin.gamego.fun/auth/login
+email: admin@gamego.fun 
+password: @dmGamingapp11!
+
+
+Webxotic details
+
+email : admin@webxotic.com
+password : admin
+
+################ Importatnt url ####################
+https://leads.monkhub.com/swagger-ui.html#!/monkhub-web-controller/saveMonkhubWebUsingPOST
+https://docs.google.com/document/d/15uSZ-9SrT3-gOHQm7vmUe3wlzO-qrtka0hZ8G-soq7c/edit#heading=h.442p7toj0wa7
+https://docs.google.com/document/d/1ihglm-Y-lL2jkrOzzuR1JVG5g6YmOlFWcLCS0mBssdY/edit#heading=h.442p7toj0wa7
+https://www.figma.com/file/QDdQcFinKuLs2vI0DqgXnh/Monkhub-Website-2024?type=design&node-id=0%3A1&mode=design&t=fjAALDDW6tU8smK4-1
+
+######## url  ##############
+https://mhappstorage.blob.core.windows.net/monkhubweb
+https://monkhubweb.s3-ap-south-1.amazonaws.com
+
+########## Rockwallet ###############
+https://meet.google.com/hix-gbtt-emi
+File run cmd - npx mocha --require esm case1.mjs --reporter mocha-allure-reporter --allureFeature "Login" --allureStory "User can not log in"
+report generate - npx allure generate --clean
+npx allure open
+npx mocha --require esm C:\TESTTEST\Scripts\DataDisplayAlltestCase\*.mjs --reporter mocha-allure-reporter --allureFeature "Login" --allureStory "User log in"
+https://mnee.testrail.io/index.php?/auth/login/L3J1bnMvdmlldy83Jmdyb3VwX2J5PXRlc3RzOmFzc2lnbmVkdG9faWQmZ3JvdXBfb3JkZXI9ZGVzYy03YjMwYmJhN2ZkNDU5NDQ3ZTJjY2M2MGQ0Njc2NjZjZWI5YzM4NjNiNDBkMDkzYTI5NDFkNDc3M2I4NWNiNjdk
+shashi.ranjan@monkhub.com
+Ravikumar@29
+
+{
+"username":"admin@mnee.xyz",
+"password":"admin@123",
+"fullname" : "admin", 
+"role" : "ADMIN", 
+"address" : "0x49480b875f6A0dF697E1bF12bE939F624575FB53"
+private key: "270703bb4f9a8c35b6838a32846c12282fb5702f2264b2cc02ebc3e1470cda4d",      
+},
+
+
+{
+"username":"jjaswal@mnee.xyz", 
+"password":"johnny@2023",
+"fullname" : "Johnny Jaswal", 
+"role" : "MINTER & BURNER & FREEZER/BLACKLISTER & PAUSER", 
+"address" : "0xA2Ab974992303c2b5200756850E1815715eCA62f",    
+private key: "838841e8a97a969a531ac294a458fe57aaae0927aa81dc2720efb6daea6f7971",
+},
+
+{
+"username":"rtarter@mnee.xyz", 
+"password":"ron#2023", 
+"fullname" : "Ron Tarter", 
+"role" : "MINTER & BURNER & FREEZER/BLACKLISTER & PAUSER", 
+"address" : "0xFc2E5532273a91490e450cb4773d2D86A51f0CeA",  
+private key: "14e688994a22429e539d6e6cea7975b13c8d19b7328e35a426653e42dc623e44",
+},
+
+{
+"username":"sgerry@mnee.xyz", 
+"password":"stephen#2023", 
+"fullname" : "Stephen Gerry", 
+"role" : "MINTER & BURNER & FREEZER/BLACKLISTER & PAUSER", 
+"address" : "0xCcD9e0817C81C5bcA484a677bC06caE5A9Db66Fa",                    
+private key :"08588c51463375b2d3f82ce5de83fcf7dd1040a10a044293552c467d9d06ee1e"
+},
+changed to fireblock address on testnet: 0x912027493d99ADd8399DbAeC89f87640e71952dB
+
+{
+"username":"hlikhari@mnee.xyz", 
+"password":"stephen#2023", 
+"fullname" : "Harbind Likhari", 
+"role" : "MINTER & BURNER & FREEZER/BLACKLISTER & PAUSER", 
+"address" : "0x4FBFb6A0398A59a24147Aa0B171bd72c306356f3",
+private key :"a57ac9e5d7e9182d34f76803e8bcb6561c97c8d0d078a68c8aa785219471481a"
+},
+
+{
+username:"rescue@mnee.xyz"
+password:"rescue@123",
+"role" : "RESCUE",
+Public address: 0x39CC6C7376daCF3505402F7AE4E3EF5128B49E6e,
+Private key: fa9c94db0df94e0af6892c3dcd2e0c633251d9162d1e47c845aa8c94b6e09d26
+}
+
+
+redeemer: 
+Public address: 0x77C10C36Ed6BEbf06Fb9b828794214B53453D6a1
+Private key: 41c4559e27f36f7c0b41feb3c9b5f9296f4c8711390cd89688a2f0289b0a182c
+
+Rescuer  + proxy owner: 
+Public address: 0x39CC6C7376daCF3505402F7AE4E3EF5128B49E6e 
+Private key: fa9c94db0df94e0af6892c3dcd2e0c633251d9162d1e47c845aa8c94b6e09d26
+
+
+################# Internation app ########################33
+1)npx wdio run
+appium -p 4724 --allow-cors
+32 500
+bulk report content
+683c1cd
+
+Web Development
+Industry serve
+Web 3.0
+
+
+############### Github ########################33
+Email=> vivek.tripathi@monkhub.com
+Pass=> Tiwari@016881
+Username=> TiwariMonkhub
+
+
+############################ SBL NEw ###########################33
+User Interface                 punpoc-user.sblcorp.com
+Department 1 Interface   punpoc-dept1.sblcorp.com
+Department 2 interface   punpoc-dept2.sblcorp.com
+Admin Interface               punpoc-admin.sblcorp.com
+
+Swagger url=>Swagger UI (sblcorp.com)
+
+
+[Yesterday 8:33 PM] Aman Sahni
+Vivek Tripathi branch names admin branch = pubpoc-dev
+
+department 1 branch =pubpoc-dpt1-dev
+
+department 2 branch =pubpoc-dpt2-dev
+
+user branch = pubpoc-dev
+
+
+{
+  "email": "sbl@punpoc.com",
+  "password": "admin@sbl123"
+}
+
+{
+  "email": "sbladmin@gmail.com",
+  "password": "MyAdmin@#Sbl"
+}
+254525452545
+
+
+Food and Supplies Dept: 
+URL - punpoc-dept1.sblcorp.com 
+Login Credentials: 
+Login ID: "sbl@punpoc.com" 
+Password: "admin@sbl123" 
+Local Govt Dept: 
+URL -   punpoc-dept2.sblcorp.com 
+Login Credentials: 
+Login ID: "sbl@punpoc.com" 
+Password: "admin@sbl123" 
+Unified Registry Admin Interface: 
+URL -  punpoc-admin.sblcorp.com 
+Login Credentials: 
+Login ID: "sbladmin@gmail.com" 
+Password: "MyAdmin@#Sbl" 
+User Interface:   
+URL -  punpoc-user.sblcorp.com 
+Login Credentials: 
+Login ID: Adhaar No of User 
+Password: "111111” - (6 times 1) 
+
+
+
+
+/home/sbl_registry_backend/pub-department-1/
+
+https://punpoc-api.sblcorp.com/getLocalGovernmentJsonList?path=/home/sbl_registry_backend/pub-department-1/
+
+https://punpoc-api.sblcorp.com/admin/sbl/getLocalGovernmentJsonList?path=%2Fhome%2Fsbl_registry_backend%2Fpub-department-2%2F
+
+https://www.oracle.com/in/java/technologies/downloads/
+/usr/libexec/java_home -V
+
+
+
+Important links
+https://monkhub0-my.sharepoint.com/:x:/r/personal/ravi_kumar_monkhub_com/_layouts/15/Doc.aspx?sourcedoc=%7B1F782ED5-B401-4251-B9FE-6A8503D0F31A%7D&file=RW-Script%20Tracket.xlsx&action=default&mobileredirect=true&wdsle=0&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1721995436869&web=1
+
+https://monkhub0-my.sharepoint.com/:x:/g/personal/shashi_ranjan_monkhub_com/EdHPA34yBsxLgBWP85JH5t4B9_uKMJCvAp3-mcq1q-0gYQ?e=RtBtMF&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1722511846749&web=1
+
+https://monkhub0-my.sharepoint.com/personal/shashi_ranjan_monkhub_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fshashi%5Franjan%5Fmonkhub%5Fcom%2FDocuments%2FRW%2D%20Daily%20Automation%20Script%20Execution%20Report&ct=1722255271024&or=Teams%2DHL&ga=1
+
+https://monkhub0-my.sharepoint.com/personal/shashi_ranjan_monkhub_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fshashi%5Franjan%5Fmonkhub%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FAndroid%206%2E1%2E0%2E%20143%20STG%20Regression%20%2D%20TestRail%20%281%29%2Epdf&parent=%2Fpersonal%2Fshashi%5Franjan%5Fmonkhub%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files
+
+https://monkhub0-my.sharepoint.com/:x:/g/personal/shashi_ranjan_monkhub_com/ERjpiHvb3QVBvWUf3e_B7Z4BiEGt7_wDTiklEMJQHRM4yw?e=Qg9yy7&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1721887212531&web=1
+
+https://monkhub0-my.sharepoint.com/:w:/g/personal/ravi_kumar_monkhub_com/EfYXWPp_nfNMvLdLDi8x2D8BszE-mqv8OYAI_wCfXU23dA?e=ydMVef&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1721794739205&web=1
+
+https://monkhub0-my.sharepoint.com/personal/vivek_tripathi_monkhub_com/_layouts/15/doc.aspx?sourcedoc={d595d783-3cc0-4938-a5b5-c9ac27dedef0}&action=edit
+
+https://monkhub0-my.sharepoint.com/:x:/g/personal/shashi_ranjan_monkhub_com/EUTFTmheVg9FrsR-Q56SkdYBpaSUwb3-w8uWva6WiozFUg?e=jTuGsk&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1718175675109&web=1
+
+https://github.com/rockwalletcode/qa-automation-apps
+
+
+https://app.slack.com/client/T19ENJLKC/C07BLK5T5FV?cdn_fallback=1
+
+https://monkhub0-my.sharepoint.com/:w:/r/personal/ravi_kumar_monkhub_com/_layouts/15/Doc.aspx?sourcedoc=%7B704ff4cd-87a1-4da1-80a3-9e90d91f26ab%7D&action=edit&wdPreviousSession=27b07cc5-4695-d54c-409a-ab7b7833376a
+
+https://monkhub0-my.sharepoint.com/:w:/r/personal/ravi_kumar_monkhub_com/_layouts/15/Doc.aspx?sourcedoc=%7Bad9ba0ff-7f85-4b53-aa5f-29553a7a7103%7D&action=edit&wdPreviousSession=67b9091f-00a1-fccc-42f5-265193899eac
+
+
+
+appium -p 4724 --allow-cors 
+
+shashi.monkhub@gmail.com
+Shashi@monk123
+
+
+
+
+
+
+
+
+
+
+
+https://monkhub0-my.sharepoint.com/:x:/r/personal/shashi_ranjan_monkhub_com/_layouts/15/Doc.aspx?sourcedoc=%7B0ee4f256-5bdb-45dd-bd89-eaf3bad0cfae%7D&action=edit&activeCell=%27Vivek%27!E18&wdinitialsession=a27b991c-33ad-6f01-9036-7c45597e5646&wdrldsc=2&wdrldc=1&wdrldr=AccessTokenExpiredWarning%2CRefreshingExpiredAccessT
+
+
